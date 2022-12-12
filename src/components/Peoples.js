@@ -9,7 +9,7 @@ export default function Peoples() {
   const params = useParams();
   const id = params.id;
 
-  const url = `https://swapi.dev/api/films/${id}`;
+  const url = `https://swapi.dev/api/people/${id}`;
 
   useEffect(() => {
     axios
@@ -37,18 +37,14 @@ export default function Peoples() {
   } else {
     return (
       <div className="col-9">
-        <h1 className="text-center">{people.title}</h1>
+        <h1 className="text-center ">{people.name}</h1>
         <div className="text-center m-3">
+          <p className="text-body">{" Taille m : " + people.height / 100}</p>
+          <p className="text_body">{"Point kg :" + people.mass}</p>
+          <p className="text-body">{"Coleur " + people.hair_color}</p>
+          <p className="text-body">{"gender  :" + people.gender}</p>
           <p className="text-body">
-            {" Nombre d'episode : " + people.episode_id}
-          </p>
-          <p className="text_body">
-            {"Rampe d'ouverture :" + people.opening_crawl}
-          </p>
-          <p className="text-body">{"Director: " + people.director}</p>
-          <p className="text-body">{"Producteur :" + people.producer}</p>
-          <p className="text-body">
-            {"Date de réalisation  :" + people.release_date}
+            {"couleur des yeux   :" + people.eye_color}
           </p>
         </div>
       </div>
