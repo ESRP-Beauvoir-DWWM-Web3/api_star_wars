@@ -39,14 +39,21 @@ export default function Peoples() {
       <div className="col-9">
         <h1 className="text-center ">{people.name}</h1>
         <div className="text-center m-3">
-          <p className="text-body">{" Taille m : " + people.height / 100}</p>
-          <p className="text_body">{"Point kg :" + people.mass}</p>
-          <p className="text-body">{"Coleur " + people.hair_color}</p>
+          <p className="text-body">{" Taille: " + people.height / 100} M </p>
+          <p className="text_body">{"Point :" + people.mass} Kg </p>
+          <p className="text-body">{"Coleur " + people.skin_color}</p>
           <p className="text-body">{"gender  :" + people.gender}</p>
           <p className="text-body">
             {"couleur des yeux   :" + people.eye_color}
           </p>
         </div>
+        <a
+          className="text-body text-decoration-none"
+          href="https://starwars.fandom.com/fr/wiki/Han_Solo"
+          target="_blank"
+        >
+          Personnages de l'univers Starwars.
+        </a>
       </div>
     );
   }

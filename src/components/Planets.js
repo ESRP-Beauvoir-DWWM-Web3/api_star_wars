@@ -33,7 +33,7 @@ export default function Planets() {
       <div className="col-9">
         <h1 className="text-center">{planetArray.name}</h1>
         <div className="text-center m-3">
-          <p className="text-boby">{"Films: " + planetArray.orbital_period}</p>
+          <p className="text-boby">{"diameter: " + planetArray.diameter}</p>
           <p className="text-boby">{"Terrain : " + planetArray.terrain}</p>
           <p className="text-boby">
             {"Rotation : " + planetArray.rotation_period}

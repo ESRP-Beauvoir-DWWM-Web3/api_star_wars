@@ -9,6 +9,7 @@ export default function Navbar() {
     e.preventDefault();
     const redirectionUrl = `/Poeples/${people}`;
     navigate(redirectionUrl);
+    console.log(redirectionUrl);
   }
   // la valeur récupérée dans le champs est stockée dans le state dans la propriété 'pokemon'
   function handChange(value) {
@@ -37,7 +38,7 @@ export default function Navbar() {
               <a
                 className="nav-link active"
                 aria-current="page"
-                href="/peoles/4"
+                href="/peole/4"
               >
                 People
               </a>
@@ -58,7 +59,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/planets/1">
+              <a className="nav-link" href="/planets/4">
                 Planets
               </a>
             </li>

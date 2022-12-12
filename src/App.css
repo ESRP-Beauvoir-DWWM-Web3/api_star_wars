@@ -105,7 +105,13 @@ h1.text-center:hover {
   left: 12%;
   opacity: 2;
 }
-.div.text-center {
-  color: burlywood !important;
+.text-center {
+  color: #7e5e34;
   font-size: 20px;
+}
+a.text-body.text-decoration-none {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }

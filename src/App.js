@@ -16,7 +16,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/peoles/:id" element={<Peoples />} />
+        <Route path="/peole/:id" element={<Peoples />} />
         <Route path="/films/:id" element={<Films />} />
         <Route path="/planets/:id" element={<Planets />} />
         <Route path="/starships/:id" element={<Starships />} />
