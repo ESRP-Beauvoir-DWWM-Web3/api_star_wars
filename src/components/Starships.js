@@ -38,7 +38,7 @@ export default function Starships() {
             <p className="text-boby">
               {"Manufacturer: " + startship.manufacturer}
             </p>
-            <p className="text-boby">{"l'équipage: " + startship.crew}</p>
+            <p className="text-boby">{"Longueur: " + startship.length}</p>
             <p className="text-boby">{"Passagères: " + startship.passengers}</p>
             <p className="text-boby">
               {"Consommables: " + startship.consumables}
