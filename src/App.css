@@ -46,26 +46,26 @@
   margin: 20px;
   font-size: 2em;
 }
-.d-flex {
+/* .d-flex {
   margin: 10px;
   font-size: 2em;
   font-family: monospace;
   font-weight: 800;
   color: gray;
+} */
+form.d-flex {
+  position: relative;
+  left: 48%;
+  top: -22%;
 }
-.col-9 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 44px 18px 24px 42px;
-}
+
 img {
-  display: flex;
+  /* display: flex;
   align-items: stretch;
-  flex-direction: column;
+  flex-direction: column; */
   position: relative;
   left: 20%;
-  margin: 28px;
+  /* margin: 28px; */
   width: 41%;
   height: 39vh;
   object-fit: contain;
@@ -73,9 +73,11 @@ img {
 h1.text-center {
   font-size: 30px;
   font-family: fantasy;
+  color: burlywood;
 }
 h1.text-center:hover {
   color: red;
+  cursor: pointer;
 }
 .col-9 {
   position: relative;
@@ -84,11 +86,18 @@ h1.text-center:hover {
   font-size: 20px;
   font-family: monospace;
   font-weight: 800;
-  border: 2px solid grey;
+  border: 2px hsl(50deg 13% 26% / 49%);
   border-radius: 12px;
-  box-shadow: 4px 3px 1px #adb5bd;
+  box-shadow: 0px 0px 5px #374e5e;
+  /* box-shadow: 4px 3px 1px hsl(50deg 13% 26% / 49%); */
   margin: 20px;
-  background-color: hsla(50, 33%, 25%, 0.75);
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/025/856/529/large/nicolas-bras-destroyer-chasseur-tie-5.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-color: hsl(50deg 13% 26% / 49%); */
 }
 .home {
   display: flex;
@@ -98,4 +107,8 @@ h1.text-center:hover {
   position: relative;
   top: 20%;
   left: 12%;
+  opacity: 2;
+}
+.text-center.m-3 {
+  color: burlywood;
 }
